@@ -1,0 +1,51 @@
+.greetingContainer {
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    justify-content: center;
+
+    padding: 10px;
+
+    gap: 20px;
+}
+
+.greetingTitle {
+    font-size: 38px;
+    font-weight: bolder;
+
+    color: var(--primary-color);
+}
+.greetingP {
+    font-size: 18px;
+
+    color: var(--primary-grey);
+}
+.greetingBtn{
+    text-decoration: none;
+
+    color: var(--primary-white);
+    background-color: var(--primary-color);
+
+    padding: 10px;
+
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.5s;
+
+}
+.greetingBtn:hover{
+    background-color: var(--primary-white);
+    border: 2px solid var(--primary-color);
+
+    color: var(--primary-color);
+
+    transition: 0.5s;
+}
