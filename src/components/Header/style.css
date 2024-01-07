@@ -1,36 +1,31 @@
 .headerContainer{
-    background-color: var(--primary-color);
-
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     padding: 10px;
 
-    border-bottom: 2px solid var(--primary-red);
+    background-color: var(--primary-white);
+    border-bottom: 3px solid var(--primary-color);
 
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-}
-.title {
-    color: var(--primary-white);
 
-    font-size: 1.2rem;
-
-    font-weight: bolder;
+    z-index: +1;
 }
+.logoHeader{
+    width: 100px;
+}
+
 .icon{
-    width: 20px;
-    height: 20px;
+    width: 15px;
 }
 .iconContainer{
     display: flex;
     align-items: center;
     justify-content: center;
-
-    gap: 5px;
 }
 
 @media(width >= 1024px){

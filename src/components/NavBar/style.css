@@ -1,29 +1,36 @@
 .navContainer{
     display: flex;
-
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
+    position: fixed;
+    
+    background-color: var(--primary-color);
+    
     padding: 10px;
+    
+    margin-top: 62px;
+
+    top: -40px;
+    left: 0;
+    right: 0;
+
+    transition: 0.3s ease-in;
+}
+.drop{
+    transition: 0.3s ease-out;
+    top: 0px;
 
 }
 .navLink{
-    border-bottom: 2px solid var(--primary-color);
-
     padding: 2px;
 
     cursor: pointer;
 
     transition: 0.2s;
-
 }
 .navTxt{
     font-size: 14px;
-    font-weight: bolder;
-}
 
-.navLink:hover{
-    border-bottom: 2px solid var(--secondary-color);
-
-    transition: 0.2s;
+    color: var(--primary-white);
 }

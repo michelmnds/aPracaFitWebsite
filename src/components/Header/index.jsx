@@ -1,39 +1,37 @@
 import "./style.css";
-import instagram from "../../assets/instagram.png";
-import facebook from "../../assets/facebook.png";
 
-export const Header = () => {
+import logoHeader from "../../assets/logoHeader.png";
+
+import menu from "../../assets/menu.png";
+import x from "../../assets/x.png";
+import home from "../../assets/home.png";
+
+import { Link } from "react-router-dom";
+
+// eslint-disable-next-line react/prop-types
+export const Header = ({ nav, setNav }) => {
+  const handleClick = () => {
+    nav == false ? setNav(true) : setNav(false);
+    const navContainer = document.getElementById("navContainer");
+
+    navContainer.classList.toggle("drop");
+  };
+
   return (
     <header className="headerContainer">
-      <span className="title">A PRAÇA</span>
-
       <div className="iconContainer">
-        <a
-          className="icon"
-          style={{
-            backgroundImage: `url(${instagram})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-          alt="instagram"
-          href="https://www.instagram.com/apracacfit/"
-          target="_blank"
-          rel="noreferrer"
-        />
-
-        <a
-          className="icon"
-          style={{
-            backgroundImage: `url(${facebook})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-          alt="facebook"
-          href="https://www.facebook.com/people/A-Pra%C3%A7a-Clube-de-Fitness/100061317712253/"
-          target="_blank"
-          rel="noreferrer"
-        />
+        {nav == false ? (
+          <img className="icon" src={menu} alt="menu" onClick={handleClick} />
+        ) : (
+          <img className="icon" src={x} alt="x" onClick={handleClick} />
+        )}
       </div>
+
+      <img className="logoHeader" src={logoHeader} alt="logo" />
+
+      <Link to="/">
+        <img className="icon" src={home} alt="home icon" />
+      </Link>
     </header>
   );
 };
