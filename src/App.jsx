@@ -1,9 +1,5 @@
 /* eslint-disable no-unused-vars */
 import { Header } from "./components/Header";
-import { Background } from "./components/Background";
-import { Team } from "./components/Team";
-import { NavBar } from "./components/NavBar";
-import { Greetings } from "./components/Greetings";
 
 import { useState } from "react";
 
@@ -12,7 +8,7 @@ import { Routes, Route } from "react-router-dom";
 import { LandingPage } from "./Pages/LandingPage";
 import { About } from "./Pages/About";
 import { Classes } from "./Pages/Classes";
-import { News } from "./Pages/News";
+import { News } from "./Pages/NewsPage";
 import { TeamPage } from "./Pages/TeamPage";
 
 function App() {

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./style.css";
 
 // eslint-disable-next-line react/prop-types
@@ -13,7 +14,9 @@ export const Greetings = () => {
 
       <p className="greetingP">Para mais informações</p>
 
-      <a className="greetingBtn">CLIQUE AQUI</a>
+      <Link className="greetingBtn" to="/about">
+        CLIQUE AQUI
+      </Link>
     </div>
   );
 };

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./style.css";
 
 // eslint-disable-next-line react/prop-types
@@ -5,8 +6,12 @@ export const Team = () => {
   return (
     <div className="teamContainer">
       <h2 className="teamTitle">Temos uma ótima equipa a tua espera!</h2>
-      <a className="teamBtn">CONHEÇA A EQUIPA</a>
-      <a className="teamBtn red">CONHEÇA AS AULAS</a>
+      <Link to="/team" className="teamBtn">
+        CONHEÇA A EQUIPA
+      </Link>
+      <Link to="/classes" className="teamBtn red">
+        CONHEÇA AS AULAS
+      </Link>
     </div>
   );
 };
