@@ -1,5 +1,42 @@
 import "./style.css";
+import { Display } from "../../components/Display";
+
+import newsData from "../../newsData";
 
 export const News = () => {
-  return <h1 style={{ fontSize: 48, marginTop: 60 }}>News</h1>;
+  return (
+    <div className="displayContainer">
+      <h1 className="displayTitle">
+        Principais <br /> Notícias
+      </h1>
+
+      <hr />
+
+      {newsData.map((display) => {
+        if (display.id % 2 == 0) {
+          return (
+            <Display
+              key={display.id}
+              data={display.data}
+              img={display.image}
+              title={display.title}
+              description={display.description}
+              backColor="var(--primary-grey)"
+            />
+          );
+        } else {
+          return (
+            <Display
+              key={display.id}
+              data={display.data}
+              img={display.image}
+              title={display.title}
+              description={display.description}
+              backColor="var(--primary-color)"
+            />
+          );
+        }
+      })}
+    </div>
+  );
 };
