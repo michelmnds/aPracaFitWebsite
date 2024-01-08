@@ -1,5 +1,25 @@
 import "./style.css";
 
 export const About = () => {
-  return <h1 style={{ fontSize: 48, marginTop: 60 }}>About</h1>;
+  return (
+    <>
+      <div className="aboutContainer">
+        <h1 className="aboutTitle">
+          Nossa
+          <br />
+          História
+        </h1>
+
+        <hr className="aboutLine" />
+
+        <p className="aboutP">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ex
+          aspernatur ipsum fugit delectus culpa inventore quidem nulla possimus
+          dolorum quia, autem fugiat repudiandae illo laborum voluptas
+          voluptatem accusamus quod.
+        </p>
+      </div>
+      <div className="background" />
+    </>
+  );
 };

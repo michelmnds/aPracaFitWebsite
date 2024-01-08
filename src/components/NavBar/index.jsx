@@ -1,24 +1,25 @@
 import "./style.css";
+import { Link } from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types
 export const NavBar = () => {
   return (
     <nav className="navContainer" id="navContainer">
-      <div className="navLink" name="SOBRE">
+      <Link to="/about" className="navLink" name="SOBRE">
         <span className="navTxt">SOBRE</span>
-      </div>
+      </Link>
 
-      <div className="navLink" name="AULAS">
+      <Link to="/classes" className="navLink" name="AULAS">
         <span className="navTxt">AULAS</span>
-      </div>
+      </Link>
 
-      <div className="navLink" name="NOTÍCIAS">
+      <Link to="/news" className="navLink" name="NOTÍCIAS">
         <span className="navTxt">NOTÍCIAS</span>
-      </div>
+      </Link>
 
-      <div className="navLink" name="EQUIPA">
+      <Link to="/team" className="navLink" name="EQUIPA">
         <span className="navTxt">EQUIPA</span>
-      </div>
+      </Link>
     </nav>
   );
 };
