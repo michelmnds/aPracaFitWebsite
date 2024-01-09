@@ -1,7 +1,7 @@
 const newsData = [
   {
     id: 1,
-    image: "../src/assets/background.png",
+    image: "https://i.imgur.com/IQFPVRx.png",
     title: "Exemplo de notícia 1",
     data: "01/01/2024",
     description:
@@ -9,7 +9,7 @@ const newsData = [
   },
   {
     id: 2,
-    image: "../src/assets/background.png",
+    image: "https://i.imgur.com/IQFPVRx.png",
     title: "Exemplo de notícia 2",
     data: "01/01/2024",
     description:
@@ -17,7 +17,7 @@ const newsData = [
   },
   {
     id: 3,
-    image: "../src/assets/background.png",
+    image: "https://i.imgur.com/IQFPVRx.png",
     title: "Exemplo de notícia 3",
     data: "01/01/2024",
     description:
