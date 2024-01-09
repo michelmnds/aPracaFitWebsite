@@ -1,0 +1,11 @@
+.classMainContainer{
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex;
+
+    gap: 30px;
+}

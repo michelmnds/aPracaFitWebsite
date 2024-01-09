@@ -1,5 +1,40 @@
 import "./style.css";
+import { ClassesCard } from "../../components/ClassesCard";
+import classesData from "../../classesData";
 
 export const Classes = () => {
-  return <h1 style={{ fontSize: 48, marginTop: 60 }}>Classes</h1>;
+  return (
+    <div className="classMainContainer">
+      <h1 className="classTitle">
+        Nossas <br />
+        Aulas
+      </h1>
+
+      <hr />
+
+      {classesData.map((currentClass) => {
+        if (currentClass.id % 2 == 0) {
+          return (
+            <ClassesCard
+              key={currentClass.id}
+              image={currentClass.image}
+              name={currentClass.name}
+              description={currentClass.description}
+              backColor="var(--primary-color)"
+            />
+          );
+        } else {
+          return (
+            <ClassesCard
+              key={currentClass.id}
+              image={currentClass.image}
+              name={currentClass.name}
+              description={currentClass.description}
+              backColor="var(--primary-grey)"
+            />
+          );
+        }
+      })}
+    </div>
+  );
 };

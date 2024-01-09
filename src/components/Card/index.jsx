@@ -1,9 +1,9 @@
 import "./style.css";
 
 // eslint-disable-next-line react/prop-types
-export const Card = ({ name, image, instagram }) => {
+export const Card = ({ name, image }) => {
   const handleCardClick = () => {
-    window.open(instagram, "_blank");
+    window.open("https://wa.me/message/3FGVEKEXWXJDF1", "_blank");
   };
 
   return (
