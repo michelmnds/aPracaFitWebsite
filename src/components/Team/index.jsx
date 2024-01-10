@@ -9,7 +9,7 @@ export const Team = () => {
       <Link to="/team" className="teamBtn">
         CONHEÇA A EQUIPA
       </Link>
-      <Link to="/classes" className="teamBtn red">
+      <Link to="/classes" className="redTeamBtn">
         CONHEÇA AS AULAS
       </Link>
     </div>

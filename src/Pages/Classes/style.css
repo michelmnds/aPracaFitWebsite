@@ -5,7 +5,20 @@
     flex-direction: column;
 
     justify-content: center;
-    align-items: flex;
+    align-items: flex-start;
 
     gap: 30px;
+}
+@media(width >= 1024px){
+    .classMainContainer{
+        padding: 60px;
+    
+        display: flex;
+        flex-direction: column;
+    
+        justify-content: center;
+        align-items: flex-start;
+    
+        gap: 30px;
+    }
 }

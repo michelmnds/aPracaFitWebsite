@@ -11,15 +11,15 @@ export const LandingPage = () => {
   return (
     <>
       <News />
-      <Greetings />
-      <div
-        style={{
-          backgroundImage: `url(${placeHolder})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          height: 376,
-        }}
-      />
+      <main className="mainContainer">
+        <Greetings />
+        <div
+          className="greetingBackground"
+          style={{
+            backgroundImage: `url(${placeHolder})`,
+          }}
+        />
+      </main>
       <Team />
     </>
   );

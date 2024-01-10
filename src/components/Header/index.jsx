@@ -27,9 +27,31 @@ export const Header = ({ nav, setNav }) => {
         )}
       </div>
 
-      <img className="logoHeader" src={logoHeader} alt="logo" />
+      <div className="navListContainer">
+        <Link to="/about" className="navLink" name="SOBRE">
+          <span className="navTxt">SOBRE</span>
+        </Link>
+
+        <Link to="/classes" className="navLink" name="AULAS">
+          <span className="navTxt">AULAS</span>
+        </Link>
+      </div>
 
       <Link to="/">
+        <img className="logoHeader" src={logoHeader} alt="logo" />
+      </Link>
+
+      <div className="navListContainer">
+        <Link to="/news" className="navLink" name="NOTÍCIAS">
+          <span className="navTxt">NOTÍCIAS</span>
+        </Link>
+
+        <Link to="/team" className="navLink" name="EQUIPA">
+          <span className="navTxt">EQUIPA</span>
+        </Link>
+      </div>
+
+      <Link className="iconContainer" to="/">
         <img className="icon" src={home} alt="home icon" />
       </Link>
     </header>

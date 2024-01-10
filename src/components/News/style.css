@@ -30,3 +30,25 @@
 
     margin-bottom: 20px;
 }
+
+@media(width >= 1024px){
+    .newsContainer{
+        background-image: url('../../assets/news-placeholder.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    
+        height: 700px;
+    
+        position: relative;
+    
+        display: flex;
+        flex-direction: column;
+    
+        align-items: center;
+        justify-content: flex-end;
+    
+        margin-top: 64px;
+        text-decoration: none;
+    }
+}

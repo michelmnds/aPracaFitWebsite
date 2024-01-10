@@ -53,3 +53,24 @@ hr{
 
     transition: 0.5s;
 }
+@media(width >= 1024px){
+    .greetingContainer{
+        padding: 0;
+        margin: 0;
+        margin-left: 60px;
+
+        gap: 30px;
+    }
+    .greetingTitle{
+        width: 420px;
+        font-size: 48px;
+    }
+    .greetingBtn{
+        width: 165px;
+    }
+    .greetingBtn:hover{
+        background-color: var(--primary-white);
+        border: 2px solid var(--primary-color);
+        color: var(--primary-color);
+    }
+}

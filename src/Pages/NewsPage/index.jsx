@@ -6,9 +6,7 @@ import newsData from "../../newsData";
 export const News = () => {
   return (
     <div className="displayContainer">
-      <h1 className="displayTitle">
-        Principais <br /> Notícias
-      </h1>
+      <h1 className="displayTitle">Principais Notícias</h1>
 
       <hr />
 

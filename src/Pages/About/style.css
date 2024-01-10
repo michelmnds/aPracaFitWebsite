@@ -1,4 +1,17 @@
-.aboutContainer{    
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    justify-content: center;
+
+    margin: 0;
+}
+.background{
+    height: 376px;
+    width: 100%;
+}
+.aboutInfoContainer{    
     padding: 10px;
     margin-top: 80px;
 
@@ -18,7 +31,8 @@
     font-weight: bolder;    
 }
 .aboutP{
-    font-size: 18px
+    font-size: 18px;
+    width: 80%;
 }
 .background{
     height: 376px;
@@ -29,4 +43,28 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+@media(width >= 1024px){
+    .aboutContainer{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        height: 100vh;
+
+        gap: 0;
+
+        /* overflow-y: hidden; */
+    }
+    .aboutInfoContainer{
+        margin: 0;
+        margin-left: 60px;
+
+        width: 40%;
+    }
+    .background{
+        width: 50%;
+        height: 100%;
+    }
 }

@@ -45,12 +45,58 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.red{
-    background-color: var(--primary-color);
-    color: var(--primary-white);
 
-    font-weight: normal;
+    transition: 0.2s;
+
+}
+.redTeamBtn{
+    width: 175px;
+
+    text-decoration: none;
+
+    color: var(--primary-white);
+    background-color: var(--primary-color);
+
+    padding: 10px;
 
     border: 2px solid var(--primary-white);
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.2s;
+}
+@media(width >= 1024px){
+    
+    .teamContainer{
+        height: 700px;
+    }
+    .teamBtn, .redTeamBtn{
+        width: 350px;
+    }
+    
+    .redTeamBtn:hover{
+        background-color: var(--primary-white);
+        color: var(--primary-color);
+
+        font-weight: bolder;
+
+
+        transition: 0.2s;
+    }
+    .teamBtn:hover{
+        background-color: var(--primary-color);
+        border: 2px solid var(--primary-white);
+        color: var(--primary-white);
+
+        font-weight: normal;
+
+        transition: 0.2s;
+    }
+    .teamTitle{
+        width: auto;
+        font-size: 42px;
+    }
 }

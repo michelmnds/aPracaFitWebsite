@@ -2,8 +2,8 @@ import "./style.css";
 
 export const About = () => {
   return (
-    <>
-      <div className="aboutContainer">
+    <main className="aboutContainer">
+      <div className="aboutInfoContainer">
         <h1 className="aboutTitle">
           Nossa
           <br />
@@ -20,6 +20,6 @@ export const About = () => {
         </p>
       </div>
       <div className="background" />
-    </>
+    </main>
   );
 };

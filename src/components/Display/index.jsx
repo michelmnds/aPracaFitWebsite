@@ -2,7 +2,7 @@ import "./style.css";
 
 import { Link } from "react-router-dom";
 
-// eslint-disable-next-line react/prop-types
+// eslint-disable-next-line react/prop-types, no-unused-vars
 export const Display = ({ data, img, title, description, backColor }) => {
   return (
     <>
@@ -10,20 +10,25 @@ export const Display = ({ data, img, title, description, backColor }) => {
         className="singleDisplayContainer"
         style={{ backgroundColor: backColor }}
       >
-        <span className="displayDate">{data}</span>
+        {/* <span className="displayDate">{data}</span> */}
 
         <div
           className="displayBackground"
           style={{ backgroundImage: `url(${img})` }}
         />
 
-        <h2 className="displayHead">{title}</h2>
+        <div className="displayInfoContainer">
+          <h2 className="displayHead">{title}</h2>
 
-        <hr className="displayLine" />
+          <hr className="displayLine" />
 
-        <p className="displayP">{description}</p>
+          <p className="displayP">{description}</p>
 
-        <Link className="displayMore">Ver mais &gt;</Link>
+          <Link className="classMore">
+            <div>Ver mais </div>
+            &gt;
+          </Link>
+        </div>
       </div>
     </>
   );

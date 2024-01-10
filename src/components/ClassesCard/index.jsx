@@ -10,14 +10,18 @@ export const ClassesCard = ({ image, name, description, backColor }) => {
           className="classBackground"
           style={{ backgroundImage: `url(${image})` }}
         />
+        <div className="classInfoContainer">
+          <h2 className="classHead">{name}</h2>
 
-        <h2 className="classHead">{name}</h2>
+          <hr className="classLine" />
 
-        <hr className="classLine" />
+          <p className="classP">{description}</p>
 
-        <p className="classP">{description}</p>
-
-        <Link className="classMore">Ver mais &gt;</Link>
+          <Link className="classMore">
+            <div>Ver mais </div>
+            &gt;
+          </Link>
+        </div>
       </div>
     </>
   );
