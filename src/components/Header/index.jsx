@@ -4,7 +4,6 @@ import logoHeader from "../../assets/logoHeader.png";
 
 import menu from "../../assets/menu.png";
 import x from "../../assets/x.png";
-import home from "../../assets/home.png";
 
 import { Link } from "react-router-dom";
 

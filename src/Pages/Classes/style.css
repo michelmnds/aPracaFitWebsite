@@ -1,15 +1,11 @@
-.classMainContainer{
+.classMainContainer {
     padding: 10px;
-
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     align-items: flex-start;
-
     gap: 30px;
-
-    min-width: 100vh;
+    min-height: 100vh;
 }
 @media(width >= 1024px){
     .classMainContainer{
