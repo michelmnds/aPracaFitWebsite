@@ -101,3 +101,8 @@
     font-weight: normal;
     }
 }
+@media (width >= 1440px){
+    .displayContainer{
+        padding: 60px 250px;
+    }
+}

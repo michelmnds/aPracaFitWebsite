@@ -11,6 +11,7 @@ import { About } from "./Pages/About";
 import { Classes } from "./Pages/Classes";
 import { News } from "./Pages/NewsPage";
 import { TeamPage } from "./Pages/TeamPage";
+import { Footer } from "./components/Footer";
 
 function App() {
   // eslint-disable-next-line no-unused-vars
@@ -31,6 +32,8 @@ function App() {
         <Route path="/news" element={<News />} />
         <Route path="/team" element={<TeamPage />} />
       </Routes>
+
+      <Footer />
     </>
   );
 }

@@ -19,14 +19,6 @@ export const Header = ({ nav, setNav }) => {
 
   return (
     <header className="headerContainer">
-      <div className="iconContainer">
-        {nav == false ? (
-          <img className="icon" src={menu} alt="menu" onClick={handleClick} />
-        ) : (
-          <img className="icon" src={x} alt="x" onClick={handleClick} />
-        )}
-      </div>
-
       <div className="navListContainer">
         <Link to="/about" className="navLink" name="SOBRE">
           <span className="navTxt">SOBRE</span>
@@ -51,9 +43,13 @@ export const Header = ({ nav, setNav }) => {
         </Link>
       </div>
 
-      <Link className="iconContainer" to="/">
-        <img className="icon" src={home} alt="home icon" />
-      </Link>
+      <div className="iconContainer">
+        {nav == false ? (
+          <img className="icon" src={menu} alt="menu" onClick={handleClick} />
+        ) : (
+          <img className="icon" src={x} alt="x" onClick={handleClick} />
+        )}
+      </div>
     </header>
   );
 };

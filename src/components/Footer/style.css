@@ -1,0 +1,31 @@
+.footerContainer{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    height: 150px;
+
+    border-top: 2px solid var(--secondary-color);
+}
+.footerLogo{
+    width: 150px;
+}
+.footerIconContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 5px;
+}
+.footerIcon{
+    width: 25px;
+    height: 25px;
+}
+.footerLine{
+    transform: rotate(90deg);
+
+    background-color: var(--primary-color);
+}

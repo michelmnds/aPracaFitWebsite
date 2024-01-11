@@ -1,5 +1,5 @@
 .mainContainer{
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: flex-start;
     justify-content: center;
 
@@ -11,9 +11,13 @@
     width: 100%;
     height: 376px;
 }
+.landingPageContainer{
+    min-height: 100vh;
+}
 
 @media(width >= 1024px){
     .mainContainer{
+        display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;

@@ -9,7 +9,7 @@ import placeHolder from "../../assets/personal-placeholder.png";
 // eslint-disable-next-line react/prop-types
 export const LandingPage = () => {
   return (
-    <>
+    <div className="landingPageContainer">
       <News />
       <main className="mainContainer">
         <Greetings />
@@ -21,6 +21,6 @@ export const LandingPage = () => {
         />
       </main>
       <Team />
-    </>
+    </div>
   );
 };

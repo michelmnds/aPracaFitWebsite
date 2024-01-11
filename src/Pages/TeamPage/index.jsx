@@ -6,14 +6,13 @@ import { Card } from "../../components/Card";
 export const TeamPage = () => {
   return (
     <div className="classMainContainer">
-      <h1 className="classTitle">
-        Nossa <br />
-        Equipa
-      </h1>
+      <div className="teamTop">
+        <h1 className="teamTopTitle">Nossa Equipa</h1>
 
-      <hr />
+        <hr />
+      </div>
 
-      <main>
+      <main className="teamCards">
         {personalData.map((personal) => {
           if (personal.id % 2 == 0) {
             return (
