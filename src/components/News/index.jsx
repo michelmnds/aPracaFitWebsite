@@ -3,7 +3,8 @@ import "./style.css";
 
 export const News = () => {
   return (
-    <Link to="/news" className="newsContainer">
+    <Link to="/noticias" className="newsContainer">
+      <h1>PRINCIPAL NOTICIA DA SEMANA</h1>
       <span className="newsButton">VER NOTÍCIAS</span>
     </Link>
   );

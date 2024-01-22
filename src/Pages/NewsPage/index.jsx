@@ -1,7 +1,7 @@
 import "./style.css";
 import { Display } from "../../components/Display";
 
-import newsData from "../../newsData";
+import newsData from "../../data/newsData";
 
 export const News = () => {
   return (
@@ -15,6 +15,7 @@ export const News = () => {
           return (
             <Display
               key={display.id}
+              id={display.id}
               data={display.data}
               img={display.image}
               title={display.title}
@@ -26,6 +27,7 @@ export const News = () => {
           return (
             <Display
               key={display.id}
+              id={display.id}
               data={display.data}
               img={display.image}
               title={display.title}

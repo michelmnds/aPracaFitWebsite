@@ -1,6 +1,6 @@
 import "./style.css";
 import { ClassesCard } from "../../components/ClassesCard";
-import classesData from "../../classesData";
+import classesData from "../../data/classesData";
 
 export const Classes = () => {
   return (
@@ -14,6 +14,7 @@ export const Classes = () => {
           return (
             <ClassesCard
               key={currentClass.id}
+              id={currentClass.id}
               image={currentClass.image}
               name={currentClass.name}
               description={currentClass.description}
@@ -24,6 +25,7 @@ export const Classes = () => {
           return (
             <ClassesCard
               key={currentClass.id}
+              id={currentClass.id}
               image={currentClass.image}
               name={currentClass.name}
               description={currentClass.description}

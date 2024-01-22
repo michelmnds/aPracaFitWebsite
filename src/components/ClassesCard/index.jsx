@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import "./style.css";
 
-export const ClassesCard = ({ image, name, description, backColor }) => {
+export const ClassesCard = ({ id, image, name, description, backColor }) => {
   return (
     <>
       <div className="classContainer" style={{ backgroundColor: backColor }}>
@@ -17,7 +17,7 @@ export const ClassesCard = ({ image, name, description, backColor }) => {
 
           <p className="classP">{description}</p>
 
-          <Link className="classMore">
+          <Link to={`/aulas/${id}`} className="classMore">
             <div>Ver mais </div>
             &gt;
           </Link>

@@ -18,12 +18,12 @@ export const Header = ({ nav, setNav }) => {
 
   return (
     <header className="headerContainer">
-      <div className="navListContainer">
-        <Link to="/about" className="navLink" name="SOBRE">
+      <div className="navListContainer left">
+        <Link to="/sobre" className="navLink" name="SOBRE">
           <span className="navTxt">SOBRE</span>
         </Link>
 
-        <Link to="/classes" className="navLink" name="AULAS">
+        <Link to="/aulas" className="navLink" name="AULAS">
           <span className="navTxt">AULAS</span>
         </Link>
       </div>
@@ -32,12 +32,12 @@ export const Header = ({ nav, setNav }) => {
         <img className="logoHeader" src={logoHeader} alt="logo" />
       </Link>
 
-      <div className="navListContainer">
-        <Link to="/news" className="navLink" name="NOTÍCIAS">
+      <div className="navListContainer right">
+        <Link to="/noticias" className="navLink" name="NOTÍCIAS">
           <span className="navTxt">NOTÍCIAS</span>
         </Link>
 
-        <Link to="/team" className="navLink" name="EQUIPA">
+        <Link to="/equipa" className="navLink" name="EQUIPA">
           <span className="navTxt">EQUIPA</span>
         </Link>
       </div>

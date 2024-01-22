@@ -3,15 +3,13 @@ import "./style.css";
 import { Link } from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types, no-unused-vars
-export const Display = ({ data, img, title, description, backColor }) => {
+export const Display = ({ id, img, title, description, backColor }) => {
   return (
     <>
       <div
         className="singleDisplayContainer"
         style={{ backgroundColor: backColor }}
       >
-        {/* <span className="displayDate">{data}</span> */}
-
         <div
           className="displayBackground"
           style={{ backgroundImage: `url(${img})` }}
@@ -24,7 +22,7 @@ export const Display = ({ data, img, title, description, backColor }) => {
 
           <p className="displayP">{description}</p>
 
-          <Link className="classMore">
+          <Link to={`/noticias/${id}`} className="classMore">
             <div>Ver mais </div>
             &gt;
           </Link>

@@ -96,9 +96,9 @@
         font-size: 42px;
     }
     .displayP{
-        width: 200px;
-    font-size: 22px;
-    font-weight: normal;
+        width: 400px;
+        font-size: 22px;
+        font-weight: normal;
     }
 }
 @media (width >= 1440px){

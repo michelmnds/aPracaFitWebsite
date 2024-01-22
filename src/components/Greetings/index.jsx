@@ -14,7 +14,7 @@ export const Greetings = () => {
 
       <p className="greetingP">Para mais informações</p>
 
-      <Link className="greetingBtn" to="/about">
+      <Link className="greetingBtn" to="/sobre">
         CLIQUE AQUI
       </Link>
     </div>

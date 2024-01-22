@@ -6,10 +6,10 @@ export const Team = () => {
   return (
     <div className="teamContainer">
       <h2 className="teamTitle">Temos uma ótima equipa a tua espera!</h2>
-      <Link to="/team" className="teamBtn">
+      <Link to="/equipa" className="teamBtn">
         CONHEÇA A EQUIPA
       </Link>
-      <Link to="/classes" className="redTeamBtn">
+      <Link to="/aulas" className="redTeamBtn">
         CONHEÇA AS AULAS
       </Link>
     </div>

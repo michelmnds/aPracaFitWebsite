@@ -1,5 +1,5 @@
 import "./style.css";
-import personalData from "../../personalData";
+import personalData from "../../data/personalData";
 
 import { Card } from "../../components/Card";
 
