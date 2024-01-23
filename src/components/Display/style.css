@@ -78,8 +78,10 @@
         width: 50%;
     }
     .singleDisplayContainer{
-       height: 700px;
+       height: 400px;
        width: 100%;
+
+       margin-bottom: 100px;
 
        flex-direction: row;
        align-items: center;
@@ -105,4 +107,9 @@
     .displayContainer{
         padding: 60px 250px;
     }
+    .singleDisplayContainer{
+        height: 400px;
+        
+        margin-bottom: 100px;
+     }
 }

@@ -7,7 +7,7 @@ export const TeamPage = () => {
   return (
     <div className="classMainContainer">
       <div className="teamTop">
-        <h1 className="teamTopTitle">Nossa Equipa</h1>
+        <h1 className="teamTopTitle">Personal Trainers</h1>
 
         <hr />
       </div>
