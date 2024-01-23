@@ -42,7 +42,7 @@
     .newsContainer{
         background-color: var(--primary-color);
     
-        height: 700px;
+        height: 400px;
     
         position: relative;
     
@@ -62,7 +62,7 @@
 
         position: absolute;
 
-        top: 300px;
+        top: 150px;
         left: inherit;
 
         font-size: 60px;
