@@ -34,7 +34,7 @@
     transition: 0.2s;
 }
 .navTxt{
-    font-size: 14px;
+    font-size: 12px;
 
     color: var(--primary-white);
 }
