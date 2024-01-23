@@ -14,6 +14,7 @@ import { TeamPage } from "./Pages/TeamPage";
 import { Footer } from "./components/Footer";
 import { SingleClassPage } from "./Pages/SingleClassPage";
 import { SingleNewPage } from "./Pages/SingleNewPage";
+import { CountdownPage } from "./Pages/CountdownPage";
 
 function App() {
   // eslint-disable-next-line no-unused-vars
@@ -25,19 +26,20 @@ function App() {
 
   return (
     <>
-      <Header nav={nav} setNav={setNav} />
-      <NavBar nav={nav} setNav={setNav} />
+      {/* <Header nav={nav} setNav={setNav} />
+      <NavBar nav={nav} setNav={setNav} /> */}
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        {/* <Route path="/" element={<LandingPage />} />
         <Route path="/sobre" element={<About />} />
         <Route path="/aulas" element={<Classes />} />
         <Route path="/aulas/:classId" element={<SingleClassPage />} />
         <Route path="/noticias" element={<News />} />
         <Route path="/noticias/:currentNewId" element={<SingleNewPage />} />
-        <Route path="/equipa" element={<TeamPage />} />
+        <Route path="/equipa" element={<TeamPage />} /> */}
+        <Route path="*" element={<CountdownPage />} />
       </Routes>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
