@@ -38,7 +38,7 @@ export const Header = ({ nav, setNav }) => {
         </Link>
 
         <Link to="/equipa" className="navLink" name="EQUIPA">
-          <span className="navTxt">EQUIPA</span>
+          <span className="navTxt">PERSONAL TRAINERS</span>
         </Link>
       </div>
 
