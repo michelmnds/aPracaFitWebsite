@@ -23,10 +23,10 @@ const Countdown = () => {
     };
   }, []);
 
-  const days = remainingTime.days();
-  const hours = remainingTime.hours();
-  const minutes = remainingTime.minutes();
-  const seconds = remainingTime.seconds();
+  const days = remainingTime.days().toString().padStart(2, "0");
+  const hours = remainingTime.hours().toString().padStart(2, "0");
+  const minutes = remainingTime.minutes().toString().padStart(2, "0");
+  const seconds = remainingTime.seconds().toString().padStart(2, "0");
 
   return (
     <div>
