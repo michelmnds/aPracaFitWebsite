@@ -19,8 +19,8 @@ export const Header = ({ nav, setNav }) => {
   return (
     <header className="headerContainer">
       <div className="navListContainer left">
-        <Link to="/sobre" className="navLink" name="SOBRE">
-          <span className="navTxt">SOBRE</span>
+        <Link to="/fotos" className="navLink" name="SOBRE">
+          <span className="navTxt">FOTOS</span>
         </Link>
 
         <Link to="/aulas" className="navLink" name="AULAS">
@@ -33,13 +33,13 @@ export const Header = ({ nav, setNav }) => {
       </Link>
 
       <div className="navListContainer right">
-        <Link to="/noticias" className="navLink" name="NOTÍCIAS">
-          <span className="navTxt">NOTÍCIAS</span>
-        </Link>
-
         <Link to="/equipa" className="navLink" name="EQUIPA">
           <span className="navTxt">PERSONAL TRAINERS</span>
         </Link>
+
+        {/* <Link to="/noticias" className="navLink" name="NOTÍCIAS">
+          <span className="navTxt">NOTÍCIAS</span>
+        </Link> */}
       </div>
 
       <div className="iconContainer">

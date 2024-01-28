@@ -1,0 +1,109 @@
+.galeryContainer{
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+
+    margin-top: 69px;
+
+    gap: 30px;
+}
+.galeryContainer > h1{
+    font-size: 38px;
+    font-weight: bolder;
+}
+.galeryImage{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 300px;
+
+    max-width: 450px;
+
+    border: 2px solid var(--primary-color);
+
+    cursor: pointer;
+}
+.galeryMain{
+   display: flex;
+   flex-direction: row;
+    flex-wrap: wrap;
+
+   align-items: center;
+   justify-content: center;
+
+   height: auto;
+
+   gap: 20px;
+}
+.picModal{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.829);
+
+    width: 100%;
+    height: 100vh;
+
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.picModalImage{
+    background-size: cover;
+    background-position: center;
+
+    width: 300px;
+    height: 300px;
+
+    position: relative;
+}
+.closePicModal{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    font-size: 20px;
+    font-weight: bolder;
+
+    cursor: pointer;
+}
+@media(width >= 768px){
+    .galeryImage{
+        width: 350px;
+    }
+    .picModalImage{
+        width: 400px;
+        height: 400px;
+    }
+}
+@media(width >= 1024px){
+    .galeryContainer{
+        padding: 60px;
+    }
+    .galeryImage{
+        width: 280px;
+    }
+}
+@media(width >= 1440px){
+    .galeryContainer{
+        padding: 60px 150px;
+    }
+    .galeryMain{
+        gap: 50px;
+    }
+    .galeryImage{
+        width: 340px;
+    }
+    .picModalImage{
+        width: 700px;
+        height: 700px;
+    }
+}

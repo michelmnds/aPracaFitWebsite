@@ -1,5 +1,6 @@
 .newsContainer{
-    background-color: var(--primary-color);
+    background-size: cover;
+    background-position: center;
 
     height: 376px;
 
@@ -9,10 +10,17 @@
     flex-direction: column;
 
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 
     margin-top: 64px;
     text-decoration: none;
+    gap: 30px;
+}
+.topTxt{
+    width: 250px;
+}
+.bottomTxt{
+    width: 150px;
 }
 .newsContainer > h1 {
     color: black;
@@ -25,38 +33,46 @@
     font-size: 48px;
 }
 .newsButton{
-    text-decoration: none;
-    list-style: none;
+    position: absolute;
 
-    padding: 10px;
+    top: 168px;
 
-    border: 2px solid var(--primary-white);
-    border-radius: 8px;
-
-    color: var(--primary-white);
-
-    margin-bottom: 20px;
+    filter: brightness(1000%) grayscale(100%);
 }
-
+.newsVideo{
+    height: 376px;
+}
+.playIcon{
+    width: 50px;
+}
+@media(width >= 768px){
+    .topTxt{
+        width: 350px;
+    }
+    .bottomTxt{
+        width: 175px;
+    }
+}
 @media(width >= 1024px){
     .newsContainer{
-        background-color: var(--primary-color);
-    
-        height: 400px;
-    
-        position: relative;
-    
-        display: flex;
-        flex-direction: column;
-    
-        align-items: center;
-        justify-content: flex-end;
-    
-        margin-top: 64px;
-        text-decoration: none;
+       background-size: cover;
+    background-position: center;
 
-        position: relative;
-    }
+    height: 400px;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 64px;
+    text-decoration: none;
+    gap: 30px;
+}
+    
     .newsContainer > h1 {
         color: black;
 

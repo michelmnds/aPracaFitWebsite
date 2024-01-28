@@ -53,6 +53,11 @@ hr{
 
     transition: 0.5s;
 }
+@media (width >= 768px){
+    .greetingTitle{
+        width: 350px;
+    }
+}
 @media(width >= 1024px){
     .greetingContainer{
         padding: 0;

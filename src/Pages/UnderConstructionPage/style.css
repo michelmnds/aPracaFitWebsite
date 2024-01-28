@@ -1,0 +1,21 @@
+.uCDiv{
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.uCTitle{
+    font-size: 36px;
+    font-weight: bolder;
+
+    color: var(--primary-color);
+
+    text-align: center;
+}
+
+@media(width >= 1024px) {
+    .uCTitle{
+        font-size: 50px;
+    }
+}
