@@ -16,7 +16,7 @@ export const SponsorModal = ({ setSponsorModal, setSponsorShow }) => {
         <a
           className="sponsorModalImage"
           href="https://www.fitonline.pt/collections/promocoes"
-          style={{ backgroundImage: `url(https://i.imgur.com/oAcN0Ys.png)` }}
+          style={{ backgroundImage: `url(https://i.imgur.com/6sP8ewG.png)` }}
         ></a>
       </div>
     </div>
