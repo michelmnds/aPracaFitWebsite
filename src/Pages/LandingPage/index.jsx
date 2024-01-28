@@ -13,7 +13,6 @@ export const LandingPage = ({
   setModal,
   setClientModal,
   setSponsorModal,
-  setShow,
 }) => {
   useEffect(() => {
     setTimeout(() => {
