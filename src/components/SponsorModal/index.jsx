@@ -15,8 +15,10 @@ export const SponsorModal = ({ setSponsorModal, setSponsorShow }) => {
         </span>
         <a
           className="sponsorModalImage"
-          href="https://www.fitonline.pt/collections/promocoes"
+          target="_blank"
+          href="https://www.fitonline.pt/?sca_ref=5329101.0xedHr3tyT"
           style={{ backgroundImage: `url(https://i.imgur.com/6sP8ewG.png)` }}
+          rel="noreferrer"
         ></a>
       </div>
     </div>

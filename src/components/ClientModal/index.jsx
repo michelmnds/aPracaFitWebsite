@@ -15,7 +15,9 @@ export const ClientModal = ({ clientModal, setClientModal, setClientShow }) => {
 
       <a
         className="clientModalBtn"
+        target="_blank"
         href="https://docs.google.com/forms/d/e/1FAIpQLSdv89X3ie1CnHvcXuUuCNSU4pPZOMLrPYZws6ueJbuh-1Vlag/viewform"
+        rel="noreferrer"
       >
         Carrega aqui!
       </a>
