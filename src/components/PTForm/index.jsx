@@ -62,7 +62,7 @@ export const PTForm = () => {
               id="name"
               value={nome}
               onChange={(event) => setNome(event.target.value)}
-              placeholder="Digite aqui seu nome"
+              placeholder="Nome Completo"
             />
           </label>
 
@@ -73,7 +73,7 @@ export const PTForm = () => {
               id="telemovel"
               value={telemovel}
               onChange={(event) => setTelemovel(event.target.value)}
-              placeholder="Digite aqui seu email"
+              placeholder="Número de telemóvel"
             />
           </label>
 
@@ -84,7 +84,7 @@ export const PTForm = () => {
               id="objective"
               value={objetivo}
               onChange={(event) => setObjetivo(event.target.value)}
-              placeholder="Digite aqui seu objetivo"
+              placeholder="Quais seus objetivos?"
             />
           </label>
 
@@ -95,7 +95,7 @@ export const PTForm = () => {
               id="patology"
               value={patologia}
               onChange={(event) => setPatologia(event.target.value)}
-              placeholder="Tem alguma patologia?"
+              placeholder="Tens alguma patologia?"
             />
           </label>
 
