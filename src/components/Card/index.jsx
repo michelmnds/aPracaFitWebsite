@@ -1,9 +1,15 @@
+/* eslint-disable no-unused-vars */
+import { useContext, useState } from "react";
 import "./style.css";
+import { PTContext } from "../../providers/PersonalTrainer.context";
 
 // eslint-disable-next-line react/prop-types
 export const Card = ({ name, image }) => {
+  const { setSelectedPt, sendEmail, ptForm, setPtForm } = useContext(PTContext);
+
   const handleCardClick = () => {
-    window.open("https://wa.me/message/3FGVEKEXWXJDF1", "_blank");
+    setSelectedPt(name);
+    setPtForm(true);
   };
 
   return (

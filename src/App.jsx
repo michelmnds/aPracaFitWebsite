@@ -66,7 +66,7 @@ function App() {
             />
           }
         />
-        {/* <Route path="/sobre" element={<About />} /> */}
+        <Route path="/sobre" element={<About />} />
         <Route path="/fotos" element={<Galery />} />
         {/* <Route path="/aulas" element={<Classes />} /> */}
         {/* <Route path="/aulas/:classId" element={<SingleClassPage />} /> */}

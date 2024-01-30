@@ -1,0 +1,110 @@
+.ptFormContainer{
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    z-index: 2;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ptForm{
+    position: relative;
+    width: 280px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px 10px;
+
+    background-color: var(--primary-white);
+
+    border: 2px solid var(--primary-color);
+    border-radius: 24px;
+
+    gap: 20px;
+}
+.ptFormTitle{
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: center;
+
+    color: var(--primary-color);
+}
+.ptForm > label {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    justify-content: center;
+
+    color: var(--primary-color);
+
+    font-weight: bolder;
+}
+.ptForm > label > input {
+    width: 180px;
+    outline: none;
+
+    color: var(--primary-color);
+
+    padding: 5px;
+
+    border-radius: 8px;
+    border: 1px solid var(--primary-color);
+}
+.ptFormBtn{
+    width: 194px;
+    
+    border: none;
+    border-radius: 8px;
+    outline: none;
+
+    background-color: var(--primary-color);
+
+    padding: 10px 0;
+
+    color: var(--primary-white);
+
+    cursor: pointer;
+}
+
+.ptFormClose{
+    position: absolute;
+
+    font-weight: bolder;
+
+    top: 10px;
+    right: 10px;
+
+    color: var(--primary-color);
+
+    cursor: pointer;
+}
+
+@media(width >= 768px){
+    .ptForm{
+        width: 400px;
+    }
+    .ptForm > label > input {
+        width: 220px;
+        outline: none;
+    
+        color: var(--primary-color);
+    
+        padding: 5px;
+    }
+    .ptFormBtn{
+        width: 234px;
+    }
+}
