@@ -68,9 +68,9 @@
         bottom: 0;
     }
     .left{
-        left: calc(50% - 230px);
+        left: calc(50% - 300px);
     }
     .right{
-        right: calc(50% - 270px);
+        right: calc(50% - 260px);
     }
 }
