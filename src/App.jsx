@@ -20,6 +20,7 @@ import { Galery } from "./Pages/Galery";
 import { ClientModal } from "./components/ClientModal";
 import { SponsorModal } from "./components/SponsorModal";
 import { UnderConstructionPage } from "./Pages/UnderConstructionPage";
+import { MantineProvider } from "@mantine/core";
 
 function App() {
   // eslint-disable-next-line no-unused-vars
@@ -36,7 +37,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <MantineProvider>
       {sponsorShow && sponsorModal && (
         <SponsorModal
           sponsorModal={sponsorModal}
@@ -78,7 +79,7 @@ function App() {
       </Routes>
 
       <Footer />
-    </>
+    </MantineProvider>
   );
 }
 

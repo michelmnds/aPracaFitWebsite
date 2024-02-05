@@ -2,6 +2,7 @@
 /* eslint-disable react/prop-types */
 import { useEffect } from "react";
 import "./style.css";
+import { Transition } from "@mantine/core";
 
 export const ClientModal = ({ clientModal, setClientModal, setClientShow }) => {
   const handleClick = () => {
@@ -11,7 +12,7 @@ export const ClientModal = ({ clientModal, setClientModal, setClientShow }) => {
 
   return (
     <div className={`clientModal ${clientModal ? "move" : ""}`}>
-      <span className="clientModalTxt">Deseja fazer sua adesão?</span>
+      <span className="clientModalTxt">Deseja fazer a sua adesão?</span>
 
       <a
         className="clientModalBtn"
@@ -19,7 +20,7 @@ export const ClientModal = ({ clientModal, setClientModal, setClientShow }) => {
         href="https://docs.google.com/forms/d/e/1FAIpQLSdv89X3ie1CnHvcXuUuCNSU4pPZOMLrPYZws6ueJbuh-1Vlag/viewform"
         rel="noreferrer"
       >
-        Carrega aqui!
+        Carregue aqui!
       </a>
 
       <span onClick={handleClick} className="clientModalClose">

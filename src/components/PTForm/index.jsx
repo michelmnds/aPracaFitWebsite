@@ -53,10 +53,9 @@ export const PTForm = () => {
           <span className="ptFormClose" onClick={handleClose}>
             X
           </span>
-          <h2 className="ptFormTitle">Preencha o formulário abaixo</h2>
+          <h2 className="ptFormTitle">Preencha o formulário</h2>
 
           <label htmlFor="name">
-            Nome:
             <input
               type="text"
               id="name"
@@ -67,7 +66,6 @@ export const PTForm = () => {
           </label>
 
           <label htmlFor="telemovel">
-            No. Telemóvel:
             <input
               type="text"
               id="telemovel"
@@ -78,7 +76,6 @@ export const PTForm = () => {
           </label>
 
           <label htmlFor="objective">
-            Objetivo:
             <input
               type="text"
               id="objective"
@@ -89,7 +86,6 @@ export const PTForm = () => {
           </label>
 
           <label htmlFor="patology">
-            Patologias:
             <input
               type="text"
               id="patology"

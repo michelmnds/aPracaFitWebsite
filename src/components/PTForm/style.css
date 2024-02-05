@@ -30,12 +30,12 @@
     background-color: var(--primary-white);
 
     border: 2px solid var(--primary-color);
-    border-radius: 24px;
+    border-radius: 12px;
 
     gap: 20px;
 }
 .ptFormTitle{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bolder;
     text-align: center;
 
@@ -60,14 +60,19 @@
 
     color: var(--primary-color);
 
-    padding: 8px;
+    padding: 12px;
 
     border-radius: 4px;
     border: 1px solid rgb(172, 172, 172);
     
 }
+.ptForm > label > input::placeholder {
+    opacity: 70%;
+
+    font-weight: bolder;
+}
 .ptFormBtn{
-    width: 194px;
+    width: 205px;
     
     border: none;
     border-radius: 8px;
@@ -106,6 +111,6 @@
         color: var(--primary-color);
     }
     .ptFormBtn{
-        width: 234px;
+        width: 244px;
     }
 }

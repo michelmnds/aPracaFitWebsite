@@ -5,7 +5,7 @@ import classesData from "../../data/classesData";
 export const Classes = () => {
   return (
     <div className="classMainContainer">
-      <h1 className="classTitle">Nossas Aulas</h1>
+      <h1 className="classTitle">As Nossas Aulas</h1>
 
       <hr />
 
