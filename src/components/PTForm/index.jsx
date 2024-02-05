@@ -12,6 +12,8 @@ export const PTForm = () => {
 
   const [sent, setSent] = useState(false);
 
+  const [error, setError] = useState(false);
+
   useEffect(() => {
     setSent(false);
   }, []);
@@ -32,8 +34,18 @@ export const PTForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    sendEmail(payload);
-    setSent(true);
+    if (
+      payload.nome &&
+      payload.objetivo &&
+      payload.patologia &&
+      payload.telemovel
+    ) {
+      sendEmail(payload);
+      setSent(true);
+    } else {
+      setError(true);
+      console.log("error");
+    }
   };
 
   return (
@@ -104,6 +116,12 @@ export const PTForm = () => {
               readOnly
             />
           </label>
+
+          {error && (
+            <span style={{ fontSize: 14, color: "red" }}>
+              Preencha antes de enviar!
+            </span>
+          )}
 
           <button className="ptFormBtn" type="submit">
             Enviar!

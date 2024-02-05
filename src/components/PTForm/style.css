@@ -99,7 +99,6 @@
 
     cursor: pointer;
 }
-
 @media(width >= 768px){
     .ptForm{
         width: 400px;
