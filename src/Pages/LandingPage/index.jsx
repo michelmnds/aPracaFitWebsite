@@ -6,6 +6,7 @@ import { News } from "../../components/News";
 import { Team } from "../../components/Team";
 import { Greetings } from "../../components/Greetings";
 import { useEffect } from "react";
+import Infos from "../../components/Infos";
 
 // eslint-disable-next-line react/prop-types
 export const LandingPage = ({
@@ -34,6 +35,7 @@ export const LandingPage = ({
         />
       </main>
       <Team />
+      <Infos />
     </div>
   );
 };

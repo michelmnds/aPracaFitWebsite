@@ -1,0 +1,150 @@
+.moreInfosContainer{
+    height: 580px;
+
+    padding: 20px;
+
+    margin-bottom: 80px;
+}
+.moreInfosMainTxt{
+    font-size: 20px;
+    font-weight: bolder;
+
+    color: var(--primary-color);
+}
+.moreInfosContainer > .topSection  hr{
+   width: 50%;
+
+   margin: 20px 0;
+}
+.moreInfosTime{
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+.moreInfosTimeTxt{
+    font-size: 18px;
+    color: var(--primary-color);
+
+    font-weight: bolder;
+}
+.moreInfosDay{
+    font-size: 14px;
+
+    color: var(--primary-color);
+}
+.mapContainer{
+    margin-top: 10px;
+
+    width: 100%;
+    max-width: 385px;
+    height: 360px;
+
+    border: 1px solid var(--primary-color);
+    border-radius: 12px;
+
+    background-image: url('https://i.imgur.com/C4VqlKl.png');
+    background-size: 160%;
+
+    background-position: center;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mapContainerMarker{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px;
+    gap: 6px;
+
+    background-color: white;
+
+    width: 100px;
+
+    border-radius: 8px;
+
+    margin-bottom: 140px;
+
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.384);
+}
+.mapContainerMarker > span {
+    font-size: 14px;
+}
+.mapContainerMarker > a {
+    font-size: 12px;
+}
+
+@media(width >= 1024px){
+    .moreInfosContainer{
+        margin-bottom: 80px;
+        margin-left: 60px;
+    }
+}
+
+@media(width >= 1440px){
+    .mapContainerMarker{
+        margin-bottom: 160px;
+    }
+    .moreInfosContainer{
+        display: flex;
+        flex-direction: row;
+
+        align-items: center;
+        justify-content: center;
+
+        gap: 30px;
+    }
+    .topSection{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        height: 490px;
+    }
+    .bottomSection{
+        width: calc(50% - 150px);
+        max-width: 760px;
+    }
+    .mapContainer{
+        margin-top: 10px;
+
+        width: 100%;
+        max-width: 100%;
+        height: 460px;
+
+        border: 1px solid var(--primary-color);
+        border-radius: 12px;
+
+        background-image: url('https://i.imgur.com/C4VqlKl.png');
+        background-size: cover;
+
+        background-position: center;
+
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .moreInfosDay{
+        font-size: 16px;
+    }
+}
+@media (width >= 1920px){
+    .mapContainerMarker{
+        margin-bottom: 190px;
+    }
+}
