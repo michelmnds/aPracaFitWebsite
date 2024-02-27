@@ -4,7 +4,7 @@ import { NavBar } from "./components/NavBar";
 
 import { useEffect, useState } from "react";
 
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 import { LandingPage } from "./Pages/LandingPage";
 import { About } from "./Pages/About";
@@ -35,6 +35,16 @@ function App() {
     setSponsorShow(true);
     setClientShow(true);
   }, []);
+
+  function ScrollToTop() {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+
+    return null;
+  }
 
   return (
     <MantineProvider>
@@ -78,6 +88,7 @@ function App() {
         <Route path="*" element={<UnderConstructionPage />} />
       </Routes>
 
+      <ScrollToTop />
       <Footer />
     </MantineProvider>
   );
