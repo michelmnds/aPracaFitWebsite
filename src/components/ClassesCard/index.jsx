@@ -2,24 +2,18 @@
 import { Link } from "react-router-dom";
 import "./style.css";
 
-export const ClassesCard = ({ id, image, name, description, backColor }) => {
+export const ClassesCard = ({ id, image, name, backColor }) => {
   return (
     <>
       <div className="classContainer" style={{ backgroundColor: backColor }}>
-        <div
+        <Link
+          to={`/aulas/${id}`}
           className="classBackground"
           style={{ backgroundImage: `url(${image})` }}
         />
         <div className="classInfoContainer">
-          <h2 className="classHead">{name}</h2>
-
-          <hr className="classLine" />
-
-          <p className="classP">{description}</p>
-
           <Link to={`/aulas/${id}`} className="classMore">
-            <div>Ver mais </div>
-            &gt;
+            <h2 className="classHead">{name}</h2>
           </Link>
         </div>
       </div>

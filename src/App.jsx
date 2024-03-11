@@ -79,8 +79,8 @@ function App() {
         />
         <Route path="/sobre" element={<About />} />
         <Route path="/fotos" element={<Galery />} />
-        {/* <Route path="/aulas" element={<Classes />} /> */}
-        {/* <Route path="/aulas/:classId" element={<SingleClassPage />} /> */}
+        <Route path="/aulas" element={<Classes />} />
+        <Route path="/aulas/:classId" element={<SingleClassPage />} />
         {/* <Route path="/noticias" element={<News />} /> */}
         {/* <Route path="/noticias/:currentNewId" element={<SingleNewPage />} /> */}
         <Route path="/equipa" element={<TeamPage />} />

@@ -1,47 +1,25 @@
 const classesData = [
   {
     id: 1,
-    image: "https://i.imgur.com/LWUBkMM.jpg",
+    image: "https://i.imgur.com/gBIGfpA.png",
     name: "PUMP",
-    schedule: [
-      {
-        day: "Seg",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
-      },
-      {
-        day: "Qua",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
-      },
-      {
-        day: "Sex",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
-      },
+    teachers: [
+      { id: 1, name: "João Tiago", image: "https://i.imgur.com/vuZSfdI.png" },
+      { id: 2, name: "Ricardo Lima", image: "https://i.imgur.com/zkPQnWv.png" },
     ],
     description:
       "O Pump é uma modalidade de exercício físico que combina o uso de barras e anilhas com movimentos coreografados ao som de música motivadora.",
   },
   {
     id: 2,
-    image: "https://i.imgur.com/LWUBkMM.jpg",
+    image: "https://i.imgur.com/gEAlYYH.png",
     name: "JUMP FIT",
-    schedule: [
+    teachers: [
+      { id: 1, name: "Paula Vilela", image: "https://i.imgur.com/rUwwqto.png" },
       {
-        day: "Seg",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
-      },
-      {
-        day: "Qua",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
-      },
-      {
-        day: "Sex",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
+        id: 2,
+        name: "Raquel Duarte",
+        image: "https://i.imgur.com/JhorxA0.png",
       },
     ],
     description:
@@ -49,23 +27,23 @@ const classesData = [
   },
   {
     id: 3,
-    image: "https://i.imgur.com/LWUBkMM.jpg",
-    name: "INDOOR CYCLING",
-    schedule: [
+    image: "https://i.imgur.com/TkAymHJ.png",
+    name: "CYCLING",
+    teachers: [
       {
-        day: "Seg",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
+        id: 1,
+        name: "Valvani Santos",
+        image: "https://i.imgur.com/FnmI4E3.png",
       },
       {
-        day: "Qua",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
+        id: 2,
+        name: "Dino Santos",
+        image: "https://i.imgur.com/CqiBJGB.png",
       },
       {
-        day: "Sex",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
+        id: 3,
+        name: "Raquel Duarte",
+        image: "https://i.imgur.com/JhorxA0.png",
       },
     ],
     description:
@@ -73,23 +51,23 @@ const classesData = [
   },
   {
     id: 4,
-    image: "https://i.imgur.com/LWUBkMM.jpg",
+    image: "https://i.imgur.com/9EA8v9N.jpg",
     name: "PILATES",
-    schedule: [
+    teachers: [
       {
-        day: "Seg",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
+        id: 1,
+        name: "Ana Reis",
+        image: "https://i.imgur.com/alhYQoY.png",
       },
       {
-        day: "Qua",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
+        id: 2,
+        name: "Catarina Fonseca",
+        image: "https://i.imgur.com/iw630Jv.png",
       },
       {
-        day: "Sex",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
+        id: 3,
+        name: "Raquel Duarte",
+        image: "https://i.imgur.com/JhorxA0.png",
       },
     ],
     description:
@@ -97,23 +75,14 @@ const classesData = [
   },
   {
     id: 5,
-    image: "https://i.imgur.com/LWUBkMM.jpg",
+    image: "https://i.imgur.com/Jd3Bv1H.png",
     name: "HIIT",
-    schedule: [
+    teachers: [
+      { id: 1, name: "João Tiago", image: "https://i.imgur.com/vuZSfdI.png" },
       {
-        day: "Seg",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
-      },
-      {
-        day: "Qua",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
-      },
-      {
-        day: "Sex",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
+        id: 2,
+        name: "Miguel Trindade",
+        image: "https://i.imgur.com/6E76c5C.png",
       },
     ],
     description:
@@ -121,23 +90,13 @@ const classesData = [
   },
   {
     id: 6,
-    image: "https://i.imgur.com/LWUBkMM.jpg",
-    name: "3B(BUMBUMBRASIL)",
-    schedule: [
+    image: "https://i.imgur.com/FCEYq2N.jpg",
+    name: "3B",
+    teachers: [
       {
-        day: "Seg",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
-      },
-      {
-        day: "Qua",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
-      },
-      {
-        day: "Sex",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
+        id: 1,
+        name: "André Ribeiro",
+        image: "https://i.imgur.com/unEx0O2.png",
       },
     ],
     description:
@@ -145,23 +104,13 @@ const classesData = [
   },
   {
     id: 7,
-    image: "https://i.imgur.com/LWUBkMM.jpg",
+    image: "https://i.imgur.com/SNf9uI1.png",
     name: "STRONG",
-    schedule: [
+    teachers: [
       {
-        day: "Seg",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
-      },
-      {
-        day: "Qua",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
-      },
-      {
-        day: "Sex",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
+        id: 1,
+        name: "Valvani Santos",
+        image: "https://i.imgur.com/FnmI4E3.png",
       },
     ],
     description:
@@ -169,23 +118,18 @@ const classesData = [
   },
   {
     id: 8,
-    image: "https://i.imgur.com/LWUBkMM.jpg",
+    image: "https://i.imgur.com/UsrILaf.png",
     name: "ZUMBA",
-    schedule: [
+    teachers: [
       {
-        day: "Seg",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
+        id: 1,
+        name: "Sandra Ferreira",
+        image: "https://i.imgur.com/jfoQ0wj.png",
       },
       {
-        day: "Qua",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
-      },
-      {
-        day: "Sex",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
+        id: 2,
+        name: "Catarina Fonseca",
+        image: "https://i.imgur.com/iw630Jv.png",
       },
     ],
     description:
@@ -193,23 +137,13 @@ const classesData = [
   },
   {
     id: 9,
-    image: "https://i.imgur.com/LWUBkMM.jpg",
+    image: "https://i.imgur.com/HXLJTlh.jpg",
     name: "STRETCHING",
-    schedule: [
+    teachers: [
       {
-        day: "Seg",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
-      },
-      {
-        day: "Qua",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
-      },
-      {
-        day: "Sex",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
+        id: 1,
+        name: "Daniel Andrade",
+        image: "https://i.imgur.com/ec7Jljn.png",
       },
     ],
     description:
@@ -217,72 +151,36 @@ const classesData = [
   },
   {
     id: 10,
-    image: "https://i.imgur.com/LWUBkMM.jpg",
+    image: "https://i.imgur.com/hCaC0oX.jpg",
     name: "STEP",
-    schedule: [
-      {
-        day: "Seg",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
-      },
-      {
-        day: "Qua",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
-      },
-      {
-        day: "Sex",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
-      },
+    teachers: [
+      { id: 1, name: "Paula Vilela", image: "https://i.imgur.com/rUwwqto.png" },
     ],
     description:
       "O step é uma modalidade de exercício que utiliza um pequeno degrau ou plataforma (chamado de 'step') para realizar uma variedade de movimentos coreografados. Essa prática pode ser incorporada em aulas de grupo, como o 'Step Aeróbico', que se tornou popular nas décadas de 1980 e 1990, ou ser parte de rotinas de treino individual.",
   },
   {
     id: 11,
-    image: "https://i.imgur.com/LWUBkMM.jpg",
-    name: "LOCALIZADA",
-    schedule: [
-      {
-        day: "Seg",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
-      },
-      {
-        day: "Qua",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
-      },
-      {
-        day: "Sex",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
-      },
+    image: "https://i.imgur.com/iuWqICZ.png",
+    name: "LOCAL",
+    teachers: [
+      { id: 1, name: "João Tiago", image: "https://i.imgur.com/vuZSfdI.png" },
+      { id: 2, name: "Paula Vilela", image: "https://i.imgur.com/rUwwqto.png" },
     ],
     description:
       "É uma modalidade de exercício que visa trabalhar grupos musculares específicos em uma região do corpo, geralmente com o uso de peso corporal ou pequenos acessórios como halteres, elásticos e caneleiras.",
   },
   {
     id: 12,
-    image: "https://i.imgur.com/LWUBkMM.jpg",
+    image: "https://i.imgur.com/Sq6j4KP.png",
     name: "GAP",
-    schedule: [
+    teachers: [
       {
-        day: "Seg",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
+        id: 1,
+        name: "Valvani Santos",
+        image: "https://i.imgur.com/FnmI4E3.png",
       },
-      {
-        day: "Qua",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
-      },
-      {
-        day: "Sex",
-        time: "11:00 - 12:00",
-        teacher: "Professor",
-      },
+      { id: 2, name: "Paula Vilela", image: "https://i.imgur.com/rUwwqto.png" },
     ],
     description:
       "A aula de GAP (Glúteos, Abdómen e Pernas) é uma modalidade de exercício que tem como foco o fortalecimento e tonificação dessas regiões específicas do corpo.",

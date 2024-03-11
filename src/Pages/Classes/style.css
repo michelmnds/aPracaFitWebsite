@@ -3,9 +3,25 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 30px;
     min-height: 100vh;
+}
+.classTopContainer{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.mainClassContainer{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
 }
 @media(width >= 1024px){
     .classMainContainer{
@@ -15,9 +31,12 @@
         flex-direction: column;
     
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
     
         gap: 30px;
+    }
+    .mainClassContainer{
+        max-width: 1200px;
     }
 }
 @media(width >= 1440px){
@@ -28,7 +47,7 @@
         flex-direction: column;
     
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
     
         gap: 30px;
     }

@@ -1,22 +1,23 @@
 .classContainer{
     background-color: var(--primary-color);
 
-    height: 440px;
+    height: 240px;
+    width: 240px;
 
     display: flex;
     flex-direction: column;
     
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-start;
 
     padding: 0;
 
-    gap: 10px;
+    border-radius: 8px;
 }
 .classTitle{
     margin-top: 80px;
     
-    font-size: 42px;
+    font-size: 32px;
     font-weight: bolder;    
 }
 .classBackground{
@@ -24,10 +25,13 @@
     background-position: center;
 
     width: 100%;
-    height: 40%;
+    height: 60%;
 
-    opacity: 60%;
+    opacity: 80%;
+
+    border-radius: 8px 8px 0 0;
 }
+
 .classHead{
     font-size: 24px;
     
@@ -64,52 +68,9 @@
 
     padding: 20px;
 }
+
 @media(width >= 1024px){
-    .classContainer{
-        background-color: var(--primary-color);
-    
-        height: 400px;
-        width: 100%;
-
-        margin-bottom: 100px;
-    
-        display: flex;
-        flex-direction: row;
-        
-        align-items: center;
-        justify-content: space-between;
-    
-        padding: 0;
-        gap: 0;
-    }
-    .classInfoContainer{
-        width: 50%;
-    }
-    .classBackground{
-        background-size: cover;
-        background-position: center;
-    
-        width: 50%;
-        height: 100%;
-    
-        opacity: 60%;
-    }
-    .classHead{
+    .classTitle{
         font-size: 42px;
-    }
-    .classP{
-        width: 400px;
-        
-        font-size: 22px;
-        font-weight: normal;
-    }
-    .classMore{
-        font-size: 24px;
-
-        transition: 0.2s ease-out;
-    }
-    .classMore:hover{
-        gap: 15px;
-        transition: 0.2s ease-out;
     }
 }

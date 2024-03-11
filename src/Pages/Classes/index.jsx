@@ -5,12 +5,12 @@ import classesData from "../../data/classesData";
 export const Classes = () => {
   return (
     <div className="classMainContainer">
-      <h1 className="classTitle">As Nossas Aulas</h1>
+      <div className="classTopContainer">
+        <h1 className="classTitle">As Nossas Aulas</h1>
+      </div>
 
-      <hr />
-
-      {classesData.map((currentClass) => {
-        if (currentClass.id % 2 == 0) {
+      <main className="mainClassContainer">
+        {classesData.map((currentClass) => {
           return (
             <ClassesCard
               key={currentClass.id}
@@ -21,19 +21,8 @@ export const Classes = () => {
               backColor="var(--primary-color)"
             />
           );
-        } else {
-          return (
-            <ClassesCard
-              key={currentClass.id}
-              id={currentClass.id}
-              image={currentClass.image}
-              name={currentClass.name}
-              description={currentClass.description}
-              backColor="var(--primary-grey)"
-            />
-          );
-        }
-      })}
+        })}
+      </main>
     </div>
   );
 };

@@ -3,51 +3,60 @@ import "./style.css";
 import { useParams } from "react-router-dom";
 import classesData from "../../data/classesData";
 import { useEffect, useState } from "react";
-
+import { Card } from "../../components/Card";
+import { ClassForm } from "../../components/ClassForm";
 // eslint-disable-next-line react/prop-types
 export const SingleClassPage = ({ menu }) => {
   const { classId } = useParams();
   const [currentClass, setCurrentClass] = useState({});
+  const [classForm, setClassForm] = useState(false);
   useEffect(() => {
     setCurrentClass(
       classesData.find((currentClass) => currentClass.id == classId)
     );
   }, []);
 
+  const handleButtonClick = () => {
+    setClassForm(true);
+  };
+
   if (currentClass.id) {
     return (
-      <div className={`singleClassContainer ${menu ? "move" : ""}`}>
-        <div
-          className="singleClassImg"
-          style={{ backgroundImage: `url(${currentClass.image})` }}
-        />
+      <>
+        {classForm && (
+          <ClassForm currentClass={currentClass} setClassForm={setClassForm} />
+        )}
+        <div className={`singleClassContainer ${menu ? "move" : ""}`}>
+          <div
+            className="singleClassImg"
+            style={{ backgroundImage: `url(${currentClass.image})` }}
+          />
 
-        <div className="singleClassInfos">
-          <h2 className="singleClassName">{currentClass.name}</h2>
+          <div className="singleClassInfos">
+            <h2 className="singleClassName">{currentClass.name}</h2>
 
-          <h3 className="singleClassModality">{currentClass.modality}</h3>
+            <h3 className="singleClassModality">{currentClass.modality}</h3>
 
-          <span className="singleClassDesc">{currentClass.description}</span>
+            <span className="singleClassDesc">{currentClass.description}</span>
 
-          <span className="singleClassText">Agenda: </span>
+            <span className="singleClassText">Professores: </span>
 
-          <section className="schedule">
-            {currentClass.schedule.map((day) => {
-              return (
-                <div key={day.day} className="dayContainer">
-                  <span className="dayDay">{day.day}</span>
-                  <span className="dayTime">{day.time}</span>
-                  <span className="dayTeacher">{day.teacher}</span>
-                </div>
-              );
-            })}
-          </section>
+            <section className="classPtContainer">
+              {currentClass.teachers.map((teacher) => (
+                <Card
+                  key={teacher.id}
+                  name={teacher.name}
+                  image={teacher.image}
+                />
+              ))}
+            </section>
 
-          <a href="#" className="singleClassBtn">
-            CONTACTE-NOS
-          </a>
+            <button className="singleClassBtn" onClick={handleButtonClick}>
+              CONTACTE-NOS
+            </button>
+          </div>
         </div>
-      </div>
+      </>
     );
   }
 };

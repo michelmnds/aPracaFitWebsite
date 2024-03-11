@@ -1,14 +1,14 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 // eslint-disable-next-line no-unused-vars
 import { useContext, useEffect, useState } from "react";
 import "./style.css";
 import { PTContext } from "../../providers/PersonalTrainer.context";
 
-export const PTForm = () => {
+export const ClassForm = ({ currentClass, setClassForm }) => {
   const [nome, setNome] = useState("");
   const [telemovel, setTelemovel] = useState("");
   const [objetivo, setObjetivo] = useState("");
-  const [patologia, setPatologia] = useState("");
 
   const [sent, setSent] = useState(false);
 
@@ -18,28 +18,22 @@ export const PTForm = () => {
     setSent(false);
   }, []);
 
-  const { selectedPt, sendEmail, ptForm, setPtForm } = useContext(PTContext);
+  const { sendEmail } = useContext(PTContext);
 
   const payload = {
     nome,
     telemovel,
     objetivo,
-    patologia,
-    pt: selectedPt,
+    class: currentClass.name,
   };
 
   const handleClose = () => {
-    setPtForm(false);
+    setClassForm(false);
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (
-      payload.nome &&
-      payload.objetivo &&
-      payload.patologia &&
-      payload.telemovel
-    ) {
+    if (payload.nome && payload.objetivo && payload.telemovel) {
       sendEmail(payload);
       setSent(true);
     } else {
@@ -49,23 +43,23 @@ export const PTForm = () => {
   };
 
   return (
-    <div className="ptFormContainer">
+    <div className="classFormContainer">
       {sent ? (
-        <form className="ptForm" onSubmit={handleSubmit}>
-          <span className="ptFormClose" onClick={handleClose}>
+        <form className="classForm" onSubmit={handleSubmit}>
+          <span className="classFormClose" onClick={handleClose}>
             X
           </span>
-          <h2 className="ptFormTitle">
+          <h2 className="classFormTitle">
             Formulário enviado! <br />
             Entraremos em contacto assim que possível :)
           </h2>
         </form>
       ) : (
-        <form className="ptForm" onSubmit={handleSubmit}>
-          <span className="ptFormClose" onClick={handleClose}>
+        <form className="classForm" onSubmit={handleSubmit}>
+          <span className="classFormClose" onClick={handleClose}>
             X
           </span>
-          <h2 className="ptFormTitle">Preencha o formulário</h2>
+          <h2 className="classFormTitle">Preencha o formulário</h2>
 
           <label htmlFor="name">
             <input
@@ -97,22 +91,12 @@ export const PTForm = () => {
             />
           </label>
 
-          <label htmlFor="patology">
-            <input
-              type="text"
-              id="patology"
-              value={patologia}
-              onChange={(event) => setPatologia(event.target.value)}
-              placeholder="Tens alguma patologia?"
-            />
-          </label>
-
           <label htmlFor="pt">
-            Personal Trainer:
+            Aula:
             <input
               type="text"
               id="pt"
-              defaultValue={selectedPt || ""}
+              defaultValue={currentClass.name || ""}
               readOnly
             />
           </label>
@@ -123,7 +107,7 @@ export const PTForm = () => {
             </span>
           )}
 
-          <button className="ptFormBtn" type="submit">
+          <button className="classFormBtn" type="submit">
             Enviar!
           </button>
         </form>
