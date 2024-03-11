@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import { useContext, useState } from "react";
 import "./style.css";
@@ -25,7 +26,9 @@ export const Card = ({ name, image }) => {
         }}
       />
 
-      <span className="cardName">{name}</span>
+      <span className="cardName">
+        {name.split(" ")[0]} <br /> {name.split(" ")[1]}
+      </span>
     </div>
   );
 };

@@ -6,6 +6,11 @@ const classesData = [
     teachers: [
       { id: 1, name: "João Tiago", image: "https://i.imgur.com/vuZSfdI.png" },
       { id: 2, name: "Ricardo Lima", image: "https://i.imgur.com/zkPQnWv.png" },
+      {
+        id: 3,
+        name: "André Ribeiro",
+        image: "https://i.imgur.com/unEx0O2.png",
+      },
     ],
     description:
       "O Pump é uma modalidade de exercício físico que combina o uso de barras e anilhas com movimentos coreografados ao som de música motivadora.",
@@ -44,6 +49,11 @@ const classesData = [
         id: 3,
         name: "Raquel Duarte",
         image: "https://i.imgur.com/JhorxA0.png",
+      },
+      {
+        id: 4,
+        name: "André Ribeiro",
+        image: "https://i.imgur.com/unEx0O2.png",
       },
     ],
     description:
