@@ -1,31 +1,40 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./style.css";
 import { Transition } from "@mantine/core";
+import { ClientForm } from "../ClientForm";
 
 export const ClientModal = ({ clientModal, setClientModal, setClientShow }) => {
-  const handleClick = () => {
+  const [clientForm, setClientForm] = useState(false);
+  const handleClosingClick = () => {
     setClientModal(false);
     setClientShow(false);
   };
 
+  const handleClientFormClick = () => {
+    setClientForm(true);
+  };
+
   return (
-    <div className={`clientModal ${clientModal ? "move" : ""}`}>
-      <span className="clientModalTxt">Deseja fazer a sua adesão?</span>
+    <>
+      {clientForm && (
+        <ClientForm
+          setClientModal={setClientModal}
+          setClientForm={setClientForm}
+        />
+      )}
+      <div className={`clientModal ${clientForm ? "move" : ""}`}>
+        <span className="clientModalTxt">Deseja fazer a sua adesão?</span>
 
-      <a
-        className="clientModalBtn"
-        target="_blank"
-        href="https://docs.google.com/forms/d/e/1FAIpQLSdv89X3ie1CnHvcXuUuCNSU4pPZOMLrPYZws6ueJbuh-1Vlag/viewform"
-        rel="noreferrer"
-      >
-        Carregue aqui!
-      </a>
+        <button className="clientModalBtn" onClick={handleClientFormClick}>
+          Carregue aqui!
+        </button>
 
-      <span onClick={handleClick} className="clientModalClose">
-        Não, obrigado!
-      </span>
-    </div>
+        <span onClick={handleClosingClick} className="clientModalClose">
+          Não, obrigado!
+        </span>
+      </div>
+    </>
   );
 };

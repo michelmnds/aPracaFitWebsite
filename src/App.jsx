@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
 import { Header } from "./components/Header";
 import { NavBar } from "./components/NavBar";
@@ -40,8 +41,10 @@ function App() {
     const { pathname } = useLocation();
 
     useEffect(() => {
-      window.scrollTo(0, 0);
-    }, [pathname]);
+      if (!nav) {
+        window.scrollTo(0, 0);
+      }
+    }, [pathname, nav]);
 
     return null;
   }

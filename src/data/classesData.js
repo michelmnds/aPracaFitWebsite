@@ -72,7 +72,7 @@ const classesData = [
       {
         id: 2,
         name: "Catarina Fonseca",
-        image: "https://i.imgur.com/iw630Jv.png",
+        image: "https://i.imgur.com/QuVodTI.png",
       },
       {
         id: 3,
@@ -120,7 +120,7 @@ const classesData = [
       {
         id: 1,
         name: "Catarina Fonseca",
-        image: "https://i.imgur.com/iw630Jv.png",
+        image: "https://i.imgur.com/QuVodTI.png",
       },
     ],
     description:
@@ -139,7 +139,7 @@ const classesData = [
       {
         id: 2,
         name: "Catarina Fonseca",
-        image: "https://i.imgur.com/iw630Jv.png",
+        image: "https://i.imgur.com/QuVodTI.png",
       },
     ],
     description:
