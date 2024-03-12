@@ -119,8 +119,8 @@ const classesData = [
     teachers: [
       {
         id: 1,
-        name: "Valvani Santos",
-        image: "https://i.imgur.com/FnmI4E3.png",
+        name: "Catarina Fonseca",
+        image: "https://i.imgur.com/iw630Jv.png",
       },
     ],
     description:
