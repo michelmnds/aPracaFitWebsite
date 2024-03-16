@@ -111,6 +111,8 @@
         justify-content: center;
 
         gap: 30px;
+
+    margin-bottom: 0px;
     }
     .topSection{
         display: flex;

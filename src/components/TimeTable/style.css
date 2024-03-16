@@ -1,0 +1,86 @@
+.timeTableModalContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+
+    z-index: +3;
+
+    top: 0;
+    left: 0;
+}
+.timeTableModal{
+    width: 90%;
+    height: 300px;
+
+    background-image: url('https://i.imgur.com/4T30HlB.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: relative;
+}
+.timeTableModalClose{
+    position: absolute;
+    z-index: 5;
+    top: 40px;
+    left: 10px;
+
+    font-size: 20px;
+    font-weight: bolder;
+
+    cursor: pointer;
+}
+
+@media(width >= 375px){
+    .timeTableModalClose{
+        position: absolute;
+        z-index: 5;
+        top: 20px;
+        left: 10px;
+    
+        font-size: 20px;
+        font-weight: bolder;
+    }
+}
+@media(width >= 425px){
+    .timeTableModalClose{
+        position: absolute;
+        z-index: 5;
+        top: 10px;
+        left: 10px;
+    
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .timeTableModal{
+        width: 382px;
+        height: 300px;
+    
+        background-image: url('https://i.imgur.com/4T30HlB.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+        position: relative;
+    }
+}
+@media(width >= 768px){
+    .timeTableModal{
+        width: 530px;
+        height: 400px;
+    
+        background-image: url('https://i.imgur.com/4T30HlB.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+        position: relative;
+    }
+}

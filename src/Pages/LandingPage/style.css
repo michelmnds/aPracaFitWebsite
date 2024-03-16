@@ -14,7 +14,60 @@
 .landingPageContainer{
     min-height: 100vh;
 }
+.timeTableContainer{
+    display: flex;
+    flex-direction: column;
 
+    gap: 20px;
+}
+.timeTableText{
+    font-size: 18px; 
+    font-weight: bolder;
+    
+    color: var(--primary-color);
+
+    padding-left: 20px;
+}
+.timeTable{
+    background-image: url('https://i.imgur.com/4T30HlB.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 200px;
+
+    margin-bottom: 30px;
+
+    cursor: pointer;
+
+    transition: 0.2s ease-in-out;
+
+    width: 320px;
+}
+.timeTable:hover{
+    transform: scale(1.1);
+
+    transition: 0.2s ease-in-out;
+}
+@media(width >= 768px){
+    .timeTable{
+        background-image: url('https://i.imgur.com/4T30HlB.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+        height: 400px;
+        width: 400px;
+    
+        margin-bottom: 30px;
+        margin-left: 20px;
+    }
+    .timeTableContainer{
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+}
 @media(width >= 1024px){
     .mainContainer{
         display: flex;
@@ -32,5 +85,43 @@
         background-position: center;
         width: 50%;
         height: 100%;
+    }
+    .timeTable{
+        background-image: url('https://i.imgur.com/4T30HlB.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+        height: 300px;
+        width: 400px;
+    
+        margin-bottom: 30px;
+        margin-left: 80px;
+    }
+    .timeTableText{
+        font-size: 18px; 
+        font-weight: bolder;
+        
+        color: var(--primary-color);
+    
+        padding-left: 80px;
+    }
+    @media (width >= 1440px){
+        .timeTable{
+            background-image: url('https://i.imgur.com/4T30HlB.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        
+            height: 400px;
+            width: 600px;
+        
+            margin-bottom: 30px;
+        }
+        .timeTableContainer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }

@@ -22,6 +22,7 @@ import { ClientModal } from "./components/ClientModal";
 import { SponsorModal } from "./components/SponsorModal";
 import { UnderConstructionPage } from "./Pages/UnderConstructionPage";
 import { MantineProvider } from "@mantine/core";
+import { TimeTableModal } from "./components/TimeTable";
 
 function App() {
   // eslint-disable-next-line no-unused-vars
@@ -31,6 +32,8 @@ function App() {
   const [sponsorModal, setSponsorModal] = useState(false);
   const [sponsorShow, setSponsorShow] = useState(true);
   const [clientShow, setClientShow] = useState(true);
+
+  const [timeTable, setTimeTable] = useState(false);
 
   useEffect(() => {
     setSponsorShow(true);
@@ -51,6 +54,9 @@ function App() {
 
   return (
     <MantineProvider>
+      {timeTable && (
+        <TimeTableModal timeTable={timeTable} setTimeTable={setTimeTable} />
+      )}
       {sponsorShow && sponsorModal && (
         <SponsorModal
           sponsorModal={sponsorModal}
@@ -77,6 +83,8 @@ function App() {
               setSponsorModal={setSponsorModal}
               modal={modal}
               setModal={setModal}
+              timeTable={timeTable}
+              setTimeTable={setTimeTable}
             />
           }
         />
@@ -98,3 +106,4 @@ function App() {
 }
 
 export default App;
+

@@ -5,7 +5,7 @@ import "./style.css";
 import { News } from "../../components/News";
 import { Team } from "../../components/Team";
 import { Greetings } from "../../components/Greetings";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Infos from "../../components/Infos";
 
 // eslint-disable-next-line react/prop-types
@@ -14,6 +14,8 @@ export const LandingPage = ({
   setModal,
   setClientModal,
   setSponsorModal,
+  timeTable,
+  setTimeTable,
 }) => {
   useEffect(() => {
     setTimeout(() => {
@@ -23,19 +25,26 @@ export const LandingPage = ({
   }, []);
 
   return (
-    <div className="landingPageContainer">
-      <News modal={modal} setModal={setModal} />
-      <main className="mainContainer">
-        <Greetings />
-        <div
-          className="greetingBackground"
-          style={{
-            backgroundImage: `url(https://i.imgur.com/dSMslIY.jpg)`,
-          }}
-        />
-      </main>
-      <Team />
-      <Infos />
-    </div>
+    <>
+      <div className="landingPageContainer">
+        <News modal={modal} setModal={setModal} />
+        <main className="mainContainer">
+          <Greetings />
+          <div
+            className="greetingBackground"
+            style={{
+              backgroundImage: `url(https://i.imgur.com/dSMslIY.jpg)`,
+            }}
+          />
+        </main>
+        <Team />
+        <Infos />
+
+        <div className="timeTableContainer">
+          <span className="timeTableText">Horário Semanal:</span>
+          <div className="timeTable" onClick={() => setTimeTable(true)} />
+        </div>
+      </div>
+    </>
   );
 };
