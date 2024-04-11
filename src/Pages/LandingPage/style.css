@@ -29,7 +29,7 @@
     padding-left: 20px;
 }
 .timeTable{
-    background-image: url('https://i.imgur.com/4T30HlB.jpg');
+    background-image: url('https://i.imgur.com/vLynA1K.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -51,7 +51,7 @@
 }
 @media(width >= 768px){
     .timeTable{
-        background-image: url('https://i.imgur.com/4T30HlB.jpg');
+        background-image: url('https://i.imgur.com/vLynA1K.jpg');
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -87,7 +87,7 @@
         height: 100%;
     }
     .timeTable{
-        background-image: url('https://i.imgur.com/4T30HlB.jpg');
+        background-image: url('https://i.imgur.com/vLynA1K.jpg');
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -108,7 +108,7 @@
     }
     @media (width >= 1440px){
         .timeTable{
-            background-image: url('https://i.imgur.com/4T30HlB.jpg');
+            background-image: url('https://i.imgur.com/vLynA1K.jpg');
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
