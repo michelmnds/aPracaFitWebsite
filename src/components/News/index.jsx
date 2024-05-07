@@ -2,7 +2,6 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 import "./style.css";
-import play from "../../assets/play.png";
 import image from "../../assets/espera-background.png";
 import topTxt from "../../assets/espera-top-txt.png";
 import bottomTxt from "../../assets/espera-bottom-txt.png";

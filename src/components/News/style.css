@@ -17,7 +17,7 @@
     gap: 30px;
 }
 .topTxt{
-    width: 250px;
+    width: 300px;
 }
 .bottomTxt{
     width: 150px;
@@ -47,7 +47,7 @@
 }
 @media(width >= 768px){
     .topTxt{
-        width: 350px;
+        width: 450px;
     }
     .bottomTxt{
         width: 175px;
