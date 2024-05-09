@@ -10,7 +10,11 @@ export const News = ({ modal, setModal }) => {
   return (
     <div>
       <section className="topSec">
-        <Link onClick={() => setModal(true)}>
+        <a
+          href="https://www.instagram.com/p/C6a4kpDLcLx/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <div
             className="newsContainer"
             style={{ backgroundImage: `url(${image})` }}
@@ -18,7 +22,7 @@ export const News = ({ modal, setModal }) => {
             <img src={topTxt} alt="txt" className="topTxt" />
             <img src={bottomTxt} alt="txt" className="bottomTxt" />
           </div>
-        </Link>
+        </a>
       </section>
 
       <section className="bottomSec"></section>
