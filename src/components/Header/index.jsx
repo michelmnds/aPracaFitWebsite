@@ -40,6 +40,10 @@ export const Header = ({ nav, setNav }) => {
         <Link to="/equipa" className="navLink" name="EQUIPA">
           <span className="navTxt">PERSONAL TRAINERS</span>
         </Link>
+
+        <Link to="/noticias" className="navLink" name="EQUIPA">
+          <span className="navTxt">NOTÍCIAS</span>
+        </Link>
       </div>
 
       <div className="iconContainer">

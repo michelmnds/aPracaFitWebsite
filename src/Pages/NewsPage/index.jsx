@@ -19,7 +19,7 @@ export const News = () => {
               data={display.data}
               img={display.image}
               title={display.title}
-              description={display.description}
+              description={display.description.slice(0, 110) + "..."}
               backColor="var(--primary-grey)"
             />
           );
@@ -31,7 +31,7 @@ export const News = () => {
               data={display.data}
               img={display.image}
               title={display.title}
-              description={display.description}
+              description={display.description.slice(0, 110) + "..."}
               backColor="var(--primary-color)"
             />
           );

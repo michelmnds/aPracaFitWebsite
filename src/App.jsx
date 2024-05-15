@@ -1,12 +1,9 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable no-unused-vars */
+import "@mantine/carousel/styles.css";
+import "@mantine/core/styles.layer.css";
 import { Header } from "./components/Header";
 import { NavBar } from "./components/NavBar";
-
 import { useEffect, useState } from "react";
-
 import { Routes, Route, useLocation } from "react-router-dom";
-
 import { LandingPage } from "./Pages/LandingPage";
 import { About } from "./Pages/About";
 import { Classes } from "./Pages/Classes";
@@ -15,7 +12,6 @@ import { TeamPage } from "./Pages/TeamPage";
 import { Footer } from "./components/Footer";
 import { SingleClassPage } from "./Pages/SingleClassPage";
 import { SingleNewPage } from "./Pages/SingleNewPage";
-import { CountdownPage } from "./Pages/CountdownPage";
 import { VideoModal } from "./components/VideoModal";
 import { Galery } from "./Pages/Galery";
 import { ClientModal } from "./components/ClientModal";
@@ -92,8 +88,8 @@ function App() {
         <Route path="/fotos" element={<Galery />} />
         <Route path="/aulas" element={<Classes />} />
         <Route path="/aulas/:classId" element={<SingleClassPage />} />
-        {/* <Route path="/noticias" element={<News />} /> */}
-        {/* <Route path="/noticias/:currentNewId" element={<SingleNewPage />} /> */}
+        <Route path="/noticias" element={<News />} />
+        <Route path="/noticias/:currentNewId" element={<SingleNewPage />} />
         <Route path="/equipa" element={<TeamPage />} />
 
         <Route path="*" element={<UnderConstructionPage />} />

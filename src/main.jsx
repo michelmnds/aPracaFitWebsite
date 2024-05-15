@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import "./reset.css";
-import "./globalStyle.css";
 import { BrowserRouter } from "react-router-dom";
 import { PTContextProvider } from "./providers/PersonalTrainer.context.jsx";
+import "./reset.css";
+import "./globalStyle.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -15,3 +15,4 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     </PTContextProvider>
   </React.StrictMode>
 );
+
