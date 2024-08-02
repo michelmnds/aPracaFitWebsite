@@ -32,7 +32,7 @@ function App() {
   const [timeTable, setTimeTable] = useState(false);
 
   useEffect(() => {
-    setSponsorShow(true);
+    // setSponsorShow(true);
     setClientShow(true);
   }, []);
 
@@ -53,13 +53,13 @@ function App() {
       {timeTable && (
         <TimeTableModal timeTable={timeTable} setTimeTable={setTimeTable} />
       )}
-      {sponsorShow && sponsorModal && (
+      {/* {sponsorShow && sponsorModal && (
         <SponsorModal
           sponsorModal={sponsorModal}
           setSponsorModal={setSponsorModal}
           setSponsorShow={setSponsorShow}
         />
-      )}
+      )} */}
       {clientShow && clientModal && (
         <ClientModal
           clientModal={clientModal}
