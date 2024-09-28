@@ -1,5 +1,25 @@
 const classesData = [
   {
+    id: 13,
+    image: "https://i.imgur.com/3J8HqFO.jpg",
+    name: "CLUBE DE CORRIDA",
+    teachers: [
+      { id: 1, name: "Martim Velez", image: "https://i.imgur.com/J9pLoJn.png" },
+    ],
+    description:
+      "Bem vindos ao Clube de Corrida!\n\nAqui encontram um grupo que partilha o gosto pela corrida, estimulando o convívio, partilha de interesses e eventos direcionados especificamente à comunidade.\n\nAlém do treino, em grupo, semanal, pode ter acesso a:",
+  },
+  {
+    id: 14,
+    image: "https://i.imgur.com/YTdaJgA.jpg",
+    name: "TRX",
+    teachers: [
+      { id: 1, name: "Martim Velez", image: "https://i.imgur.com/J9pLoJn.png" },
+    ],
+    description:
+      "O TRX é uma modalidade incrível que trabalha a força, flexibilidade e equilíbrio, utilizando apenas o peso do corpo e fitas suspensas. É o treino perfeito para quem deseja desafiar os seus limites e alcançar novos resultados!\n\nNão perca a oportunidade de experimentar uma aula que está a conquistar o mundo do fitness! Traga a sua energia e disposição para uma experiência única.",
+  },
+  {
     id: 1,
     image: "https://i.imgur.com/gBIGfpA.png",
     name: "PUMP",

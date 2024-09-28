@@ -80,6 +80,15 @@ const personalData = [
     image: "https://i.imgur.com/bIJAgda.png",
     instagram: "https://www.instagram.com/patriicialourenco",
   },
+  {
+    id: 8,
+    name: "Martim Velez",
+    years: 20,
+    flag: "./assets/portugal.jpeg",
+    info: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga blanditiis assumenda ab praesentium nihil nulla dicta autem voluptatibus? Ipsa doloribus possimus distinctio vero nostrum soluta aspernatur quia quisquam laudantium et.",
+    image: "https://i.imgur.com/J9pLoJn.png",
+    instagram: "https://www.instagram.com/patriicialourenco",
+  },
 ];
 
 export default personalData;

@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import "./style.css";
-import video from "../../assets/videos/newGymVideo.mp4";
+import video from "../../assets/videos/trx.mp4";
 
 import { useRef, useState } from "react";
 import { useEffect } from "react";

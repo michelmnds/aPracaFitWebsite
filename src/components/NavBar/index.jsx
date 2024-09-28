@@ -17,6 +17,10 @@ export const NavBar = () => {
         <span className="navTxt">NOTÍCIAS</span>
       </Link>
 
+      <Link to="/aulas/13" className="navLink" name="EQUIPA">
+        <span className="navTxt">CLUBE DE CORRIDA</span>
+      </Link>
+
       <Link to="/equipa" className="navLink" name="EQUIPA">
         <span className="navTxt">PTs</span>
       </Link>

@@ -37,8 +37,12 @@ export const Header = ({ nav, setNav }) => {
       </Link>
 
       <div className="navListContainer right">
+        <Link to="/aulas/13" className="navLink" name="EQUIPA">
+          <span className="navTxt">CLUBE DE CORRIDA</span>
+        </Link>
+
         <Link to="/equipa" className="navLink" name="EQUIPA">
-          <span className="navTxt">PERSONAL TRAINERS</span>
+          <span className="navTxt">PTs</span>
         </Link>
 
         <Link to="/noticias" className="navLink" name="EQUIPA">

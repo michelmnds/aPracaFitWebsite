@@ -3,18 +3,14 @@
 import { Link } from "react-router-dom";
 import "./style.css";
 import image from "../../assets/espera-background.png";
-import topTxt from "../../assets/espera-top-txt.png";
+import topTxt from "../../assets/trx.png";
 import bottomTxt from "../../assets/espera-bottom-txt.png";
 
 export const News = ({ modal, setModal }) => {
   return (
     <div>
       <section className="topSec">
-        <a
-          href="https://www.instagram.com/p/C6a4kpDLcLx/"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <div onClick={() => setModal(true)} style={{ cursor: "pointer" }}>
           <div
             className="newsContainer"
             style={{ backgroundImage: `url(${image})` }}
@@ -22,7 +18,7 @@ export const News = ({ modal, setModal }) => {
             <img src={topTxt} alt="txt" className="topTxt" />
             <img src={bottomTxt} alt="txt" className="bottomTxt" />
           </div>
-        </a>
+        </div>
       </section>
 
       <section className="bottomSec"></section>

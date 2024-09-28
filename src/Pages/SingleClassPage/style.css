@@ -38,7 +38,7 @@
 .singleClassDesc{
     max-width: 500px;
     color: var(--primary-color);
-
+    white-space: pre-line;
     text-align: justify;
 }
 .singleClassText{

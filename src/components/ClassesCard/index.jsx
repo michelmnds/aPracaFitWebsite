@@ -4,7 +4,8 @@ import "./style.css";
 
 export const ClassesCard = ({ id, image, name, backColor }) => {
   return (
-    <>
+    <div style={{ position: "relative" }}>
+      {(id === 13 || id === 14) && <span className="tag">NOVO</span>}
       <div className="classContainer" style={{ backgroundColor: backColor }}>
         <Link
           to={`/aulas/${id}`}
@@ -17,6 +18,6 @@ export const ClassesCard = ({ id, image, name, backColor }) => {
           </Link>
         </div>
       </div>
-    </>
+    </div>
   );
 };

@@ -39,6 +39,27 @@ export const SingleClassPage = ({ menu }) => {
 
             <span className="singleClassDesc">{currentClass.description}</span>
 
+            {currentClass.id === 13 && (
+              <span className="singleClassDesc" st>
+                1. Treino personalizado online: planos de treino e acesso ao seu
+                personal trainer pelo WhatsApp (fale conosco para obter mais
+                informações); <br />
+                {`\n`}
+                2. Treino personalizado presencial, no ginásio: treino
+                acompanhado, presencialmente, com planeamento de treino
+                específico, com reavaliações frequentes (fale conosco para obter
+                mais informações); <br /> {`\n`} 3. Acesso à comunidade da
+                Praça, com partilha de dicas de treino, alimentação saudável e
+                acesso a eventos exclusivos para a comunidade.
+                {`\n`}
+                {`\n`}
+                Todos os sócios podem participar, quer tenham a corrida como
+                atividade física de eleição ou que queiram iniciar-se na
+                corrida. Para diferentes níveis de preparação, incluindo,
+                também, caminhada.
+              </span>
+            )}
+
             <span className="singleClassText">Professores: </span>
 
             <section className="classPtContainer">
