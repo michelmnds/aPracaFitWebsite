@@ -11,7 +11,7 @@ export const PTContextProvider = ({ children }) => {
   const sendEmail = async (payload) => {
     try {
       const response = await axios.post(
-        `https://emailsender-apraca.adaptable.app/form-submit`,
+        `https://emailsender-vlxe.onrender.com/form-submit`,
         payload
       );
 
